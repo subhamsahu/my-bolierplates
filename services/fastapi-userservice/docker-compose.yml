@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  userdb:
+    container_name: mongodb
+    image: mongo:4
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+      
+  user-service:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: app
+    env_file:
+      - .env
+    depends_on:
+      - userdb
+    ports:
+      - "8000:8000"
