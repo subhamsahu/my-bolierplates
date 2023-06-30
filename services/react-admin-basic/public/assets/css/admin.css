@@ -120,6 +120,17 @@ body {
   color: white !important;
 }
 
+.bg-orange-outline {
+  background-color: white !important;
+  color: #ff793f !important;
+  border:  1px solid #ff793f!important ;
+}
+
+.bg-orange-outline:hover {
+  background-color: #ff793f !important;
+  color: white !important;
+}
+
 .app_body_theme {
   background-color: #f6f6f7;
   color: black;

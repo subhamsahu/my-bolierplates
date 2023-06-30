@@ -2,7 +2,6 @@ import { themes } from '../AppTheme/initThemes';
 import layoutSettings from './Layout/LayoutSettings';
 
 // UPDATE BELOW CODE
-// DOC http://demos.ui-lib.com/matx-react-doc/layout.html
 export const AppLayoutSettings = {
   activeLayout: 'layout', // layout1, layout2
   activeTheme: 'blue', // View all valid theme colors inside AppTheme/themeColors.js

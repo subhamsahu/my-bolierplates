@@ -17,6 +17,8 @@ import useSettings from '../../../hooks/useSettings';
 import { topBarHeight } from '../../../core/constants';
 import MenuIcon from '@mui/icons-material/Menu';
 import AppMenu from '../../Core/AppMenu';
+import { NotificationProvider } from '../../../context/NotificationContext';
+import NotificationBar from '../../NotificationBar/NotificationBar';
 
 const TopbarRoot = styled('div')({
     top: 0,
@@ -102,6 +104,9 @@ const LayoutTopBar = () => {
                 </Box>
 
                 <Box display="flex" alignItems="center">
+                    <NotificationProvider>
+                        <NotificationBar />
+                    </NotificationProvider>
                     <AppMenu
                         menuButton={
                             <UserMenu>

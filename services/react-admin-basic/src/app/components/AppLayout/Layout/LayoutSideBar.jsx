@@ -6,6 +6,7 @@ import useSettings from '../../../hooks/useSettings';
 import { sidenavCompactWidth, sideNavWidth } from '../../../core/constants';
 import { convertHexToRGB } from '../../../core/utils';
 import Brand from '../../Core/Brand';
+import SideNavOptions from '../../Core/SideNavOptions';
 // import Sidenav from '../../Common/Core/Sidenav';
 
 const SidebarNavRoot = styled(Box)(({ theme, width, bg, image }) => ({
@@ -80,6 +81,7 @@ const LayoutSideBar = () => {
                     </Hidden>
                 </Brand>
                 {/* <Sidenav /> */}
+                <SideNavOptions/>
             </NavListBox>
         </SidebarNavRoot>
     )

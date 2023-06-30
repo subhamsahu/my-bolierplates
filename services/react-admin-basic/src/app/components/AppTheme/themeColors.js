@@ -175,7 +175,7 @@ export const themeColors = {
     palette: {
       type: 'light',
       primary: {
-        main: '#1976d2',
+        main: '#033b8e',
         contrastText: '#ffffff',
       },
       secondary: {
